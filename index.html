@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualiser</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .blink {
+            animation: bl 0.5s 1;
+        }
+        
+        .scale {
+            animation: sc 0.8s 1;
+        }
+        
+        @keyframes bl {
+            0% {
+                background-color: purple;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+        
+        @keyframes sc {
+            0% {}
+            100% {
+                transform: scale(1.1, 1.1);
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="grid-cols-5 text-white mt-[40vh] ml-[40vw]">
+        <div>
+            <input id="it0" name="array[]" class=" bg-purple-900 h-20 w-20 text-center" type="number">
+            <input id="it1" name="array[]" class=" bg-purple-900 h-20 w-20 text-center" type="number">
+            <input id="it2" name="array[]" class=" bg-purple-900 h-20 w-20 text-center" type="number">
+            <input id="it3" name="array[]" class=" bg-purple-900 h-20 w-20 text-center" type="number">
+            <input id="it4" name="array[]" class=" bg-purple-900 h-20 w-20 text-center" type="number">
+        </div>
+        <button id="btn" class="bg-black text-white text-2xl mt-6 ml-[130px] px-8 py-3 rounded-2xl active:bg-purple-600">Sort Me</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
